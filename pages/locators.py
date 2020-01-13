@@ -13,3 +13,4 @@ class ProductPageLocators():
     BOOK_NAME_ALERT = (By.CSS_SELECTOR, ".alertinner > strong")
     PRICE_BOOK = (By.CSS_SELECTOR, ".product_main > .price_color")
     PRICE_CARD_ALERT = (By.CSS_SELECTOR, ".alertinner > p > strong")
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, ".alertinner")
