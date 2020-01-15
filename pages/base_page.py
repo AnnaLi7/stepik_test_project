@@ -12,6 +12,10 @@ class BasePage():
         link = self.browser.find_element(*BasePageLocators.LOGIN_LINK)
         link.click()
 
+    def go_to_the_card(self):
+        button = self.browser.find_element(*BasePageLocators.CARD_BUTTON)
+        button.click()
+
     def __init__(self, browser, url, timeout=10):
         self.browser = browser
         self.url = url
