@@ -15,9 +15,6 @@ class ProductPage(BasePage):
         button = self.browser.find_element(*ProductPageLocators.ADD_TO_CARD)
         button.click()
 
-    def put_answer_in_alert_add_product_in_card(self):
-        answer = self.solve_quiz_and_get_code()
-
     def should_be_product_name_in_message(self):
         prod_name = self.browser.find_element(*ProductPageLocators.PRODUCT_NAME).text
         book_name = self.browser.find_element(*ProductPageLocators.BOOK_NAME_ALERT).text
